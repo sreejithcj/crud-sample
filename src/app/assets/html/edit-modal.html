@@ -1,0 +1,74 @@
+<div class="modal fade" id="editBugModal" tabindex="-1" role="dialog" aria-labelledby="editBugModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editBugModalLabel">Edit the bug</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form id="edit-bug-form" novalidate>
+          <div class="modal-body">
+            <div class="alert alert-success alert-dismissible fade" id="bug-edit-message">
+              <strong>Bug updated successfully.</strong>
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+            </div>
+              <input type="hidden" id="bug-id">
+
+              <div class="form-group">
+                <label for="bug-title" class="col-form-label">Title:</label>
+                <input type="text" class="form-control" id="edit-bug-title" required>
+                <div class="invalid-feedback">Please enter bug title.</div>
+              </div>
+              <div class="form-group">
+                <label for="bug-desc" class="col-form-label">Description:</label>
+                <input type="text" class="form-control" id="edit-bug-desc" required>
+                <div class="invalid-feedback">Please enter bug description.</div>
+              </div>
+              <div class="form-group">
+                <label for="bug-status" class="col-form-label">Current Status:</label>
+                <select class="form-control" aria-label="select Bug Status" id="edit-bug-status" required>
+                  <option value="" selected>Select Bug Status</option>
+                  <option value="new">New</option>
+                  <option value="assigned">Assigned</option>
+                  <option value="inprogress">In Progress</option>
+                  <option value="fixed">Fixed</option>
+                  <option value="closed">Closed</option>
+              </select>
+              <div class="invalid-feedback">Please select the bug status.</div>
+              </div>
+              <div class="form-group">
+                <label for="project" class="col-form-label">Project:</label>
+                <select class="form-control" aria-label="select project name" id="edit-project" required></select>
+                <div class="invalid-feedback">Please select the project.</div>
+              </div>
+              <div class="form-group">
+                <label for="creator" class="col-form-label">Creator:</label>
+                <select class="form-control" aria-label="select creator" id="edit-creator" required></select>
+                <div class="invalid-feedback">Please select the creator of the bug.</div>
+              </div>
+              <div class="form-group">
+                <label for="owner" class="col-form-label">Owner:</label>
+                <select class="form-control" aria-label="select owner" id="edit-owner" required></select>
+                <div class="invalid-feedback">Please select the owner of the bug.</div>
+              </div>
+              <div class="form-group">
+                <label for="priority" class="col-form-label">Priority:</label>
+                <select class="form-control" aria-label="select Bug Priority" id="edit-priority" required>
+                  <option value="" selected>Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+              </select>
+              <div class="invalid-feedback">Please select the priority of the bug.</div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary" id="update-bug">Update Bug</button>
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>

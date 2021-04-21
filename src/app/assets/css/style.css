@@ -1,0 +1,19 @@
+section {
+    margin:10px;
+}
+.edit-bug {
+    cursor: pointer;
+}
+.pageNo {
+    cursor: pointer;
+    padding:5px;
+    margin:5px;
+    border: 1px solid #8a2be2;
+}
+.currentPageNo {
+    cursor: pointer;
+    padding:5px;
+    margin:5px;
+    background-color: #8a2be2;
+    color: #ffffff;
+}
