@@ -1,6 +1,6 @@
-# Metronomic
+# Sample CRUD Project in PHP
 
-* Project Name: Metronomic Sample PHP Project
+* Project Name: Sample PHP Project
 * Version:     1.0
 * Author:      Sreejith C J
 
@@ -12,7 +12,7 @@
 
 ## About
 
-This is a sample web project developed in core PHP to demonstrate PHP coding skills
+This is a sample web project developed in core PHP for simple CRUD operations
 
 ## Installation
 
